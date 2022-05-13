@@ -1,7 +1,7 @@
 // Alert
 var alerted = localStorage.getItem('alerted') || '';
 if (alerted != 'yes') {
- alert("Welcome to the rat game! For the best user experience, please enable audio in your browser settings.");
+ alert("Welcome to the rat game! For the best user experience, please enable audio in your browser settings. This game is not optimized for mobile devices! Please use a pc...");
  localStorage.setItem('alerted','yes');
 }
 
