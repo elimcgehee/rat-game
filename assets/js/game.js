@@ -1,3 +1,10 @@
+// Alert
+var alerted = localStorage.getItem('alerted') || '';
+if (alerted != 'yes') {
+ alert("Welcome to the rat game! For the best user experience, please enable audio in your browser settings.");
+ localStorage.setItem('alerted','yes');
+}
+
 // Background Music
 window.onload = function() {
   document.getElementById("myAudio").play();
